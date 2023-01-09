@@ -94,9 +94,11 @@ export class App extends Component {
         {showModal && (
           <Modal largeImg={largeImage} onToggle={this.toggleModal} />
         )}
-        {imagesList && status !== 'loading' && totalhits > 12 && (
-          <ButtonLoadMore loadMore={this.loadMore} />
-        )}
+        {imagesList &&
+          status !== 'loading' &&
+          imagesList.length < totalhits && (
+            <ButtonLoadMore loadMore={this.loadMore} />
+          )}
       </AppStyled>
     );
   }
