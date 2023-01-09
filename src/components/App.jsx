@@ -68,6 +68,7 @@ export class App extends Component {
       largeImage,
       totalhits,
     } = this.state;
+
     return (
       <AppStyled>
         <Searchbar onSubmit={this.handleFormSubmit} />
