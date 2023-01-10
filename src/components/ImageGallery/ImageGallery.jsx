@@ -44,13 +44,7 @@ export const ImageGallery = ({
       }
     }
     imagesCatch();
-  }, [
-    onRecordingImagesList,
-    onStatusChange,
-    onWriteTotalHits,
-    page,
-    searchImages,
-  ]);
+  }, [page, searchImages]);
 
   useEffect(() => {
     if (imagesList.totalHits) {
