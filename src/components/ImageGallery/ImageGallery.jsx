@@ -38,7 +38,6 @@ export const ImageGallery = ({
         onRecordingImagesList(data.hits);
         onWriteTotalHits(data.totalHits);
         onStatusChange(STATUS.succes);
-        return;
       } catch (error) {
         onStatusChange(STATUS.error);
         toast.error('Opps! Something went wrong');
